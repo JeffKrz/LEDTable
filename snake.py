@@ -73,15 +73,15 @@ while not gameover:
         #turn off old food
         pixel(food.x, food.y, "off")
         #find new position for food that is not in snake
-#        while True:
-#            inSnake = False
-#            #food.x = random.randint(0, config.NUM_COLLS - 1)
-#            food.y = random.randint(0, config.NUM_ROWS - 1)
-#            for obj in snake:
-#                if obj.x == food.x and obj.y == food.y:
-#                    inSnake = True
-#            if not inSnake:
-#                break
+        while True:
+            inSnake = False
+            #food.x = random.randint(0, config.NUM_COLLS - 1)
+            food.y = random.randint(0, config.NUM_ROWS - 1)
+            for obj in snake:
+                if obj.x == food.x and obj.y == food.y:
+                    inSnake = True
+            if not inSnake:
+                break
         pixel(int(food.x), int(food.y), "green")
 
     #shifting each snake element to the back by one
