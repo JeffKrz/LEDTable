@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" href="snake.css">
+    <meta charset="UTF-8">
+    <title>Snake</title>
+
+</head>
+<body style="background-color:#202020;color:#E0E0E0">
+    <h1>Score</h1>
+    <div style="text-align: center">
+        <form action="/up/" method="post">
+            <button class="button" name="UpBtn" type="submit">&uarr;</button>
+        </form>
+        <p></p>
+        <button class="button">&rarr;</button>
+
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <form action="http://192.168.87.252:5000/an" target="dummyframe">
+            <button class="button">&larr;</button>
+        </form>
+
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <form action="http://192.168.87.252:5000/aus" target="dummyframe">
+            <button class="button">&darr;</button>
+        </form>
+    </div>
+
+
+</body>

@@ -1,0 +1,23 @@
+<?php 
+if ( isset( $_POST["butn"] ) ) {
+$button = $_POST['button'];
+echo "the button is $button";
+$myfile = fopen('text.txt', 'w') or die("Unable to open file!");;
+fwrite($myfile, $button);
+fclose($myfile);
+}
+?>
+
+<html>
+<head>
+<title>testing of control</title>
+</head>
+<body>
+<h1> RASPBERRY TEST AND CONTROL </h1>
+<form name="myform" method="post" action="index.php">
+ <input type="radio" name="button" value="on"><label for="on"> ON</label><br>
+ <input type="radio" name="button" value="off" checked><label for="off"> OFF</label><br>
+ <input type="submit" value="Submit">
+</form>
+</body>
+</html>

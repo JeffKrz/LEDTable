@@ -1,0 +1,2 @@
+NUM_ROWS = 18
+NUM_COLLS = 18

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JeffsPiZero1</title>
+</head>
+  <body style:"color: rgb(214, 214, 214); background-color: rgb(32, 32, 32);">
+	<h1>Jeffs Pi Zero #1</h1>
+	<h2>Verf&uumlgbare Seiten:</h2>
+        <a href="temp.php">CPU Temperatur</a><p></p>
+	<a href="phpinfo.php">PHP Info</a>
+	<a href="http://192.168.87.252:5000/an@app.route('/', methods = ['GET'])">an</an>
+	<a href="local:host/aus">aus</an>
+  </body>
+</html>
+
