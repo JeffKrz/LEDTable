@@ -9,20 +9,25 @@
 <body style="background-color:#202020;color:#E0E0E0">
     <h1>Score</h1>
     <div style="text-align: center">
-        <form action="/up/" method="post">
-            <button class="button" name="UpBtn" type="submit">&uarr;</button>
-        </form>
-        <p></p>
-        <button class="button">&rarr;</button>
 
         <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-        <form action="http://192.168.87.252:5000/an" target="dummyframe">
+        <form action="http://192.168.87.252:5000/up" target="dummyframe">
+            <button class="button">&uarr;</button>
+        </form>
+
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <form action="http://192.168.87.252:5000/left" target="dummyframe">
             <button class="button">&larr;</button>
         </form>
 
         <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-        <form action="http://192.168.87.252:5000/aus" target="dummyframe">
+        <form action="http://192.168.87.252:5000/down" target="dummyframe">
             <button class="button">&darr;</button>
+        </form>
+
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <form action="http://192.168.87.252:5000/right" target="dummyframe">
+            <button class="button">&rarr;</button>
         </form>
     </div>
 

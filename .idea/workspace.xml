@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e040380f-4259-46b7-93d1-fc23a4f18ff6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webinterface/snake.html" beforeDir="false" afterPath="$PROJECT_DIR$/Webinterface/snake.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newpixellibtester.py" beforeDir="false" afterPath="$PROJECT_DIR$/newpixellibtester.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webinterface.py" beforeDir="false" afterPath="$PROJECT_DIR$/webinterface.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
@@ -128,7 +132,7 @@
       <workItem from="1585868441302" duration="1525000" />
       <workItem from="1585905786936" duration="3127000" />
       <workItem from="1585910598802" duration="29556000" />
-      <workItem from="1585952588249" duration="1987000" />
+      <workItem from="1585952588249" duration="7930000" />
     </task>
     <servers />
   </component>
@@ -209,13 +213,17 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="667" y="265" key="search.everywhere.popup/-1920.30.1920.1050/0.30.1920.1050/1920.30.1920.1050@0.30.1920.1050" timestamp="1585868305842" />
+    <state x="1090" y="602" key="webDeployment.PermissionsDialog" timestamp="1585960168855">
+      <screen x="0" y="31" width="2560" height="1409" />
+    </state>
+    <state x="1090" y="602" key="webDeployment.PermissionsDialog/0.31.2560.1409@0.31.2560.1409" timestamp="1585960168855" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/snake.py</url>
-          <line>8</line>
+          <line>7</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
