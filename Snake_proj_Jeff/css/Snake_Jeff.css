@@ -1,0 +1,27 @@
+body {
+    background-color:#202020;
+    color:#E0E0E0;
+    position: fixed;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.box1{
+    float: left;
+    width: 50%;
+    margin-left: 725px;
+    
+}
+.box{
+    padding-top: 20px;
+    float: left;
+    width: 5%;
+    padding: 210px;
+    padding-top: 15px;
+}
+.button {
+    height: 300px;
+    width: 500px;
+}

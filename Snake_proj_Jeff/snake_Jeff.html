@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" href="css/Snake_Jeff.css">
+    <meta charset="UTF-8">
+    <title>Snake</title>
+
+</head>
+<body>
+    <h1>Score</h1>
+    <div class="clearfix">
+           <div class="box1">
+           <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+           <form action="http://192.168.87.252:5000/up" target="dummyframe">
+               <button class="button">&uarr;</button>
+           </form>
+       </div>
+
+       <div class="box">
+           <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+           <form action="http://192.168.87.252:5000/left" target="dummyframe">
+               <button class="button">&larr;</button>
+           </form>
+       </div>
+
+       <div class="box">
+           <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+           <form action="http://192.168.87.252:5000/down" target="dummyframe">
+               <button class="button">&darr;</button>
+           </form>
+       </div>
+
+       <div class="box">
+           <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+           <form action="http://192.168.87.252:5000/right" target="dummyframe">
+              <button class="button">&rarr;</button>
+           </form>
+       </div>
+    </div>
+
+</body>
+</html>
