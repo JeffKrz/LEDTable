@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e040380f-4259-46b7-93d1-fc23a4f18ff6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webinterface/snake.css" beforeDir="false" afterPath="$PROJECT_DIR$/Webinterface/snake.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Webinterface/snake.html" beforeDir="false" afterPath="$PROJECT_DIR$/Webinterface/snake.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newpixellibtester.py" beforeDir="false" afterPath="$PROJECT_DIR$/newpixellibtester.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webinterface.py" beforeDir="false" afterPath="$PROJECT_DIR$/webinterface.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +131,8 @@
       <workItem from="1585868441302" duration="1525000" />
       <workItem from="1585905786936" duration="3127000" />
       <workItem from="1585910598802" duration="29556000" />
-      <workItem from="1585952588249" duration="7930000" />
+      <workItem from="1585952588249" duration="8565000" />
+      <workItem from="1586262929863" duration="6440000" />
     </task>
     <servers />
   </component>
@@ -195,11 +195,11 @@
     </state>
     <state x="505" y="188" key="SettingsEditor/-1920.30.1920.1050/0.30.1920.1050/1920.30.1920.1050@0.30.1920.1050" timestamp="1585868909443" />
     <state x="577" y="211" key="SettingsEditor/0.30.2194.1204@0.30.2194.1204" timestamp="1585909408689" />
-    <state x="925" y="530" key="com.intellij.ide.util.TipDialog" timestamp="1585953132513">
+    <state x="925" y="530" key="com.intellij.ide.util.TipDialog" timestamp="1586262939990">
       <screen x="0" y="31" width="2560" height="1409" />
     </state>
     <state x="793" y="456" key="com.intellij.ide.util.TipDialog/0.30.2194.1204@0.30.2194.1204" timestamp="1585910602640" />
-    <state x="925" y="530" key="com.intellij.ide.util.TipDialog/0.31.2560.1409@0.31.2560.1409" timestamp="1585953132513" />
+    <state x="925" y="530" key="com.intellij.ide.util.TipDialog/0.31.2560.1409@0.31.2560.1409" timestamp="1586262939990" />
     <state x="974" y="333" width="612" height="804" key="find.popup" timestamp="1585948564298">
       <screen x="0" y="31" width="2560" height="1409" />
     </state>
