@@ -4,10 +4,10 @@ h1 {
 
 .button {
     position: relative;
-    width: 30%;
-    padding-bottom: 10%;
-    padding-top: 10%;
-    background-color: #4CAF50; /* Green */
+    width: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background-color: #202020/*#4CAF50; /* Green */
     border: none;
     color: white;
     text-align: center;
