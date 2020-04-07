@@ -9,12 +9,11 @@ class Cords(object):
         self.x = x
         self.y = y
 
+direction = "r"
+SNAKECOLOR = "blue"
+gameover = False
 
-#def setdirection(direc):
-#    direction = direc
-
-
-def GameOver():
+def gameOverAnimation():
     for i in range (0,5):
         for x in range(0,config.NUM_ROWS):
             for y in range(0,config.NUM_COLLS):
@@ -27,43 +26,21 @@ def GameOver():
         show()
         time.sleep(0.1)
 
-direction = "r"
-SNAKECOLOR = "blue"
-gameover = False
+def checkGameOver():
+    #check for game over
+    for i in range(1,len(snake)-1):
+        if snake[0].x == snake[i].x and snake[0].y == snake[i].y:
+            gameOverAnimation()
+            return True
+    return False
 
-#initialize food
-food = Cords
-food.x = random.randint(0,config.NUM_COLLS-1)
-food.y = random.randint(0,config.NUM_ROWS-1)
-pixel(int(food.x), int(food.y), "green")
-show()
-
-#initialize snake
-snake = []
-snake.append(Cords(config.NUM_COLLS/2, config.NUM_ROWS/2))
-snake.append(Cords(config.NUM_COLLS/2-1, config.NUM_ROWS/2)) #aus pixel
-
-#main
-while not gameover:
-
-    f = open("direction.txt", "r")
-    direction = str(f.read(1))
-    f.close()
-
+def snakepixelOn():
     #turn on each segment of the snake except for the last one (old tail position)
     for i in range(0,len(snake)-1):
         pixel(int(snake[i].x),int(snake[i].y),SNAKECOLOR)
     show()
 
-    #wait
-    time.sleep(0.5)
-
-    #check for game over
-    for i in range(1,len(snake)-1):
-        if snake[0].x == snake[i].x and snake[0].y == snake[i].y:
-            GameOver()
-            gameover = True
-
+def checkFood():
     #if snake head position is equal to food position, insert food position into snake list
     if snake[0].x == food.x and snake[0].y == food.y:
         snake.insert(len(snake)-2, Cords(int(food.x), int(food.y)))
@@ -83,21 +60,7 @@ while not gameover:
         pixel(int(food.x), int(food.y), "green")
         show()
 
-    #shifting each snake element to the back by one
-    for i in range(len(snake)-1, 0, -1):
-        snake[i].x = snake[i-1].x
-        snake[i].y = snake[i-1].y
-
-#    print("new snake:")
-#    for obj in snake:
-#      print("pos = " + str(obj) +"x = " + str(obj.x) + "   y = " + str(obj.y))
-
-    #turning off the last pixel of snake
-    pixel(int(snake[len(snake) - 1].x), int(snake[len(snake) - 1].y), "off")
-#    print("turning off x= " + str(snake[len(snake) - 1].x) + " and y= " + str(snake[len(snake) - 1].y))
-
-    #if snake is moving upwards
-#    print(direction)
+def forwardInDirection():
     if direction == "u":
         if snake[0].y < config.NUM_ROWS - 1 :
             snake[0].y = snake[0].y + 1
@@ -122,4 +85,39 @@ while not gameover:
         else:
             snake[0].x = 0
 
+def shiftSnake():
+    #shifting each snake element to the back by one
+    for i in range(len(snake)-1, 0, -1):
+        snake[i].x = snake[i-1].x
+        snake[i].y = snake[i-1].y
+    # turning off the last pixel of snake
+    pixel(int(snake[len(snake) - 1].x), int(snake[len(snake) - 1].y), "off")
 
+
+
+
+#initialize food
+food = Cords
+food.x = random.randint(0,config.NUM_COLLS-1)
+food.y = random.randint(0,config.NUM_ROWS-1)
+pixel(int(food.x), int(food.y), "green")
+show()
+
+#initialize snake
+snake = []
+snake.append(Cords(config.NUM_COLLS/2, config.NUM_ROWS/2))
+snake.append(Cords(config.NUM_COLLS/2-1, config.NUM_ROWS/2)) #aus pixel
+
+#main
+while not gameover:
+
+    f = open("direction.txt", "r")
+    direction = str(f.read(1))
+    f.close()
+
+    snakepixelOn()
+    time.sleep(0.5)
+    gameover = checkGameOver()
+    checkFood()
+    shiftSnake()
+    forwardInDirection()
