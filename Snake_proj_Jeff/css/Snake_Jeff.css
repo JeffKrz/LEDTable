@@ -10,18 +10,18 @@ body {
 }
 .box1{
     float: left;
-    width: 50%;
-    margin-left: 725px;
+    width: 45%;
+    margin-left: 46%;
     
 }
 .box{
-    padding-top: 20px;
+    padding-top: 5%;
     float: left;
-    width: 5%;
-    padding: 210px;
+    width: 1%;
+    padding: 15%;
     padding-top: 15px;
 }
 .button {
     height: 300px;
-    width: 500px;
+    width: 400px;
 }
