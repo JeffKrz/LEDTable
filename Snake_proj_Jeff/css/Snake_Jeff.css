@@ -13,24 +13,24 @@ body {
     padding-top: 20px;
     float: left;
     width: 100%;
-    margin-left: 50%;
+    margin-left: 36%;
     
 }
 .box{
     padding-top: 5%;
     float: left;
     width: 20%;
-    margin-left: 20%;
-    padding: 5%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-left: 5%;
+    padding-left: 12%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .box2 {
     float: left;
     width: 45%;
-    margin-left: 50%;
+    margin-left: 36%;
 }
 .button {
     height: 250px;
-    width: 400px;
+    width: 350px;
 }
